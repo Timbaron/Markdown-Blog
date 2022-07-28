@@ -1,6 +1,11 @@
 const express = require('express');
+const mongoose = require('mongoose');
+
 const app = express();
 const articleRouter = require('./routes/article');
+// connect to mongoose database
+mongoose.connect('mongodb://localhost/blog', { useNewUrlParser: true, useUnifiedTopology: true });
+
 // set up view engine
 app.set('view engine', 'ejs');
 app.use('/articles',articleRouter);
