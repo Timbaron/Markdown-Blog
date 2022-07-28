@@ -19,6 +19,6 @@ app.get('/', (req, res) => {
             description: 'Article description This is article 2'
         },
     ];
-    res.render('index', {articles: articles});
+    res.render('articles/index', {articles: articles});
 })
 app.listen(5000)
