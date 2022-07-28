@@ -9,13 +9,13 @@ app.get('/', (req, res) => {
         {
             id: 1,
             title: 'Article 1',
-            createdAt: Date.now(),
+            createdAt: new Date(),
             description: 'Article description This is article 1'
         },
         {
             id: 2,
             title: 'Article 2',
-            createdAt: Date.now(),
+            createdAt: new Date(),
             description: 'Article description This is article 2'
         },
     ];
